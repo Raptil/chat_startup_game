@@ -16,11 +16,11 @@
             <Label layoutX="224.0" layoutY="6.0" prefHeight="17.0" prefWidth="94.0" text="Primary View" />
          </children>
       </Pane>
-      <TextArea prefHeight="420.0" prefWidth="517.0" />
+      <TextArea fx:id="chatArea" prefHeight="420.0" prefWidth="517.0" />
       <Pane prefHeight="39.0" prefWidth="579.0">
          <children>
-            <TextField layoutX="6.0" layoutY="13.0" prefHeight="25.0" prefWidth="508.0" />
-            <Button layoutX="513.0" layoutY="13.0" mnemonicParsing="false" text="Button" />
+            <TextField fx:id="chatField"  layoutX="6.0" layoutY="13.0" prefHeight="25.0" prefWidth="508.0" />
+            <Button fx:id="send" layoutX="513.0" onAction="#sendMessage" layoutY="13.0" mnemonicParsing="false" text="Button" />
          </children>
       </Pane>
    </children>
