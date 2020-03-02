@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="525.0" spacing="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="fxcompany.SecondaryController">
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="525.0" spacing="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chat.client.controller.SecondaryController">
   <children>
     <Pane prefHeight="600.0" prefWidth="525.0">
       <children>
@@ -40,6 +40,7 @@
     </Pane>
   </children>
   <stylesheets>
+    <!--TODO: Add file.css or delete stylesheets usage. -->
     <URL value="@file.css" />
   </stylesheets>
 </VBox>
