@@ -1,7 +1,7 @@
 package chat.client.controller;
 
 import chat.client.App;
-import chat.client.service.MessageSenderFx;
+import chat.client.service.MessageSenderFxUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
@@ -32,7 +32,7 @@ public class PrimaryController {
 
     @FXML
     private void sendMessage() {
-        MessageSenderFx.sendMessage(chatArea, chatField.getText());
-        MessageSenderFx.clearChatField(chatField);
+        MessageSenderFxUtil.sendMessage(chatArea, chatField.getText());
+        MessageSenderFxUtil.clearChatField(chatField);
     }
 }

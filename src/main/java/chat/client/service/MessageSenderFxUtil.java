@@ -6,7 +6,10 @@ import javafx.scene.control.TextField;
 /**
  * Отправка сообщений на форме чата.
  */
-public class MessageSenderFx {
+public final class MessageSenderFxUtil {
+
+    private MessageSenderFxUtil() {
+    }
 
     public static void sendMessage(TextArea textArea, String message) {
         if (!message.isEmpty()) {
