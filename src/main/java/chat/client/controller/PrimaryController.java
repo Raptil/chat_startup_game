@@ -1,10 +1,13 @@
-package fxcompany;
+package chat.client.controller;
 
-import java.io.IOException;
+import chat.client.App;
+import chat.client.service.MessageSenderFx;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class PrimaryController {
 
@@ -23,7 +26,13 @@ public class PrimaryController {
     }
 
     @FXML
-    private void sendMessage() throws IOException{
-        chatArea.appendText(chatField.getText());
+    private void onEnterChatField() {
+        sendMessage();
+    }
+
+    @FXML
+    private void sendMessage() {
+        MessageSenderFx.sendMessage(chatArea, chatField.getText());
+        MessageSenderFx.clearChatField(chatField);
     }
 }

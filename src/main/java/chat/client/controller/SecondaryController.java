@@ -1,6 +1,8 @@
-package fxcompany;
+package chat.client.controller;
 
 import java.io.IOException;
+
+import chat.client.App;
 import javafx.fxml.FXML;
 
 public class SecondaryController {
