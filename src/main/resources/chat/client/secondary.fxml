@@ -19,7 +19,7 @@
         <Button layoutX="469.0" layoutY="579.0" mnemonicParsing="false" prefHeight="22.078125" text="Button" />
         <Pane layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="200.0">
           <children>
-            <ScrollPane prefHeight="600.0" prefWidth="200.0">
+            <ScrollPane hbarPolicy="NEVER" prefHeight="600.0" prefWidth="200.0">
               <content>
                 <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="200.0" />
               </content>
@@ -28,7 +28,7 @@
         </Pane>
         <Pane layoutX="201.0" layoutY="9.0" prefHeight="577.0" prefWidth="325.0">
           <children>
-            <ScrollPane layoutX="0.0" layoutY="-7.0" prefHeight="577.0" prefWidth="325.0">
+            <ScrollPane hbarPolicy="NEVER" layoutX="0.0" layoutY="-7.0" prefHeight="577.0000999999975" prefWidth="325.0">
               <content>
                 <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="596.0" prefWidth="324.0" />
               </content>
