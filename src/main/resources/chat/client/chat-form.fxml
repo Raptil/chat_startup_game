@@ -2,37 +2,34 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="526.0" spacing="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chat.client.controller.ChatFormController">
+<VBox alignment="TOP_CENTER" disable="false" fillWidth="true" focusTraversable="false" prefHeight="600.0" prefWidth="526.0" snapToPixel="true" spacing="0.0" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chat.client.controller.ChatFormController">
   <children>
     <Pane prefHeight="600.0" prefWidth="525.0">
       <children>
         <Pane layoutX="0.0" layoutY="0.0" prefHeight="600.0000999999975" prefWidth="200.0">
           <children>
-            <ScrollPane hbarPolicy="NEVER" layoutX="1.0" layoutY="2.0" prefHeight="595.951171875" prefWidth="200.0">
+            <ScrollPane id="chatRoomScrollPane" hbarPolicy="NEVER" layoutX="1.0" layoutY="2.0" prefHeight="595.951171875" prefWidth="200.0">
               <content>
-                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="590.0" prefWidth="200.0" />
+                <AnchorPane id="Content" fx:id="allChatRoomsAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="590.0" prefWidth="200.0" />
               </content>
             </ScrollPane>
           </children>
         </Pane>
         <Pane layoutX="201.0" layoutY="9.0" prefHeight="563.0000999999975" prefWidth="325.0">
           <children>
-            <ScrollPane hbarPolicy="NEVER" layoutX="0.0" layoutY="-7.0" prefHeight="569.999977929685" prefWidth="325.0">
-              <content>
-                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="556.0" prefWidth="324.0" />
-              </content>
-            </ScrollPane>
-            <Button layoutX="266.0" layoutY="564.0" minHeight="25.951171875" mnemonicParsing="false" prefHeight="25.951271874997474" prefWidth="59.0" text="↲">
+            <TextArea fx:id="chatTextArea" disable="false" editable="false" focusTraversable="false" layoutX="0.0" layoutY="-8.0" prefHeight="572.0" prefWidth="324.0" text="" wrapText="true" />
+            <Button fx:id="sendMessageButton" focusTraversable="false" layoutX="266.0" layoutY="563.0" minHeight="25.951171875" mnemonicParsing="false" prefHeight="25.951271874997474" prefWidth="59.0" text="↲">
               <font>
                 <Font name="Wingdings" size="15.0" />
               </font>
             </Button>
           </children>
         </Pane>
-        <TextField layoutX="202.0" layoutY="572.0" prefWidth="265.0" />
+        <TextField fx:id="sendMessageTextField" layoutX="202.0" layoutY="572.0" onAction="#onEnterChatField" prefWidth="265.0" />
       </children>
     </Pane>
   </children>
