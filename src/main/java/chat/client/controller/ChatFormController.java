@@ -1,11 +1,11 @@
 package chat.client.controller;
 
-import java.io.IOException;
-
 import chat.client.App;
 import javafx.fxml.FXML;
 
-public class SecondaryController {
+import java.io.IOException;
+
+public class ChatFormController {
 
     @FXML
     private void switchToPrimary() throws IOException {
