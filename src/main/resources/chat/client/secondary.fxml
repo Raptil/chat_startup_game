@@ -1,46 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import javafx.geometry.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-
-<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="525.0" spacing="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chat.client.controller.SecondaryController">
+<?import javafx.scene.text.Font?>
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="526.0" spacing="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="chat.client.controller.SecondaryController">
   <children>
     <Pane prefHeight="600.0" prefWidth="525.0">
       <children>
-        <Button layoutX="469.0" layoutY="579.0" mnemonicParsing="false" prefHeight="22.078125" text="Button" />
-        <Pane layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="200.0">
+        <Pane layoutX="0.0" layoutY="0.0" prefHeight="600.0000999999975" prefWidth="200.0">
           <children>
-            <ScrollPane hbarPolicy="NEVER" prefHeight="600.0" prefWidth="200.0">
+            <ScrollPane hbarPolicy="NEVER" layoutX="1.0" layoutY="2.0" prefHeight="595.951171875" prefWidth="200.0">
               <content>
-                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="200.0" />
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="590.0" prefWidth="200.0" />
               </content>
             </ScrollPane>
           </children>
         </Pane>
-        <Pane layoutX="201.0" layoutY="9.0" prefHeight="577.0" prefWidth="325.0">
+        <Pane layoutX="201.0" layoutY="9.0" prefHeight="563.0000999999975" prefWidth="325.0">
           <children>
-            <ScrollPane hbarPolicy="NEVER" layoutX="0.0" layoutY="-7.0" prefHeight="577.0000999999975" prefWidth="325.0">
+            <ScrollPane hbarPolicy="NEVER" layoutX="0.0" layoutY="-7.0" prefHeight="569.999977929685" prefWidth="325.0">
               <content>
-                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="596.0" prefWidth="324.0" />
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="556.0" prefWidth="324.0" />
               </content>
             </ScrollPane>
+            <Button layoutX="266.0" layoutY="564.0" minHeight="25.951171875" mnemonicParsing="false" prefHeight="25.951271874997474" prefWidth="59.0" text="↲">
+              <font>
+                <Font name="Wingdings" size="15.0" />
+              </font>
+            </Button>
           </children>
         </Pane>
-        <TextField layoutX="201.0" layoutY="579.0" prefWidth="268.0" />
+        <TextField layoutX="202.0" layoutY="572.0" prefWidth="265.0" />
       </children>
     </Pane>
   </children>
-  <stylesheets>
-    <!--TODO: Add file.css or delete stylesheets usage. -->
-    <URL value="@file.css" />
-  </stylesheets>
 </VBox>
